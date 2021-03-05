@@ -29,7 +29,7 @@ const App = observer(() => {
           <SignUp />
         </Route>
       </Switch>
-    </BrowserRouter></>)
+    </BrowserRouter></>);
 });
 
 export default App;
