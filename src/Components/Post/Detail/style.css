@@ -1,0 +1,12 @@
+.flex{
+    display: flex;
+}
+
+.div-img{
+    width: 70%;
+    height: 450px;
+}
+
+.details-img{
+    height: 450px;
+}

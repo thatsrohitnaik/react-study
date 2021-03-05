@@ -1,0 +1,51 @@
+p, h1, h3{
+    margin: 0px;
+}
+.profile-div-main{
+    margin: 0 18% 0 18%;
+}
+.profile-div-info{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.profile-picture{
+    width: 40%;
+}
+.profile-information{
+    width: 60%;
+}
+.profile-img{
+    border: 1px solid black;
+    border-radius: 50%;
+    display: block;
+    width: 150px;
+    margin: auto;
+}
+.profile-username{
+    height: 50px;
+}
+.profile-post-count{
+    display: flex;
+    margin-bottom: 15px;
+}
+.profile-post-count div{
+    margin-right: 15px;
+}
+
+.selection div div{
+    width: 100px;
+}
+.selection div {
+    display: flex;
+    width: 300px;
+    margin: auto;
+}
+.selection {
+    height: 50px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

@@ -1,0 +1,6 @@
+.post-image{
+    width: 95%;
+    height: 310px;
+    margin: 10px auto 10px auto;
+    object-fit: cover;
+}

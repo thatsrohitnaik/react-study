@@ -1,0 +1,77 @@
+{
+    "profile": {
+        "info": {
+            "tag": "itsrohitnaik",
+            "name": "Rohit Naik Kundaikar",
+            "img": "https://instagram.fnag1-2.fna.fbcdn.net/v/t51.2885-19/s150x150/102460924_723054888498401_6995821502154327219_n.jpg?_nc_ht=instagram.fnag1-2.fna.fbcdn.net&_nc_ohc=IH9GkTYRNEsAX90D-Qs&tp=1&oh=7e623d245c3ca8a6e24e8659b00f83da&oe=604FCB95",
+            "count": {
+                "post": 176,
+                "follower": 78,
+                "following": 189
+            },
+            "bio": "You and I in this beautiful world 😘😘😘 "
+        },
+        "posts": [
+            {
+                "src": "https://instagram.fnag1-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/116061878_283506806083125_7096265309030142727_n.jpg?tp=1&_nc_ht=instagram.fnag1-2.fna.fbcdn.net&_nc_cat=109&_nc_ohc=R5S0cn6Q6h4AX809Us9&oh=ffa7485acbb9d47209d024651c624ab4&oe=60668657",
+                "likes": [
+                    {
+                        "tag": "abc",
+                        "img": ""
+                    }
+                ],
+                "comments": [
+                    {
+                        "tag": "abc",
+                        "comment": "very nice"
+                    }
+                ]
+            },
+            {
+                "src": "https://instagram.fnag1-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/74384174_639610163236360_545038222041472045_n.jpg?tp=1&_nc_ht=instagram.fnag1-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=YsK7xOMdIlAAX-Z3ede&oh=e3a97ad1c0525f42d2674bd2889728c3&oe=6067DBFF",
+                "likes": [
+                    {
+                        "tag": "abc",
+                        "img": ""
+                    }
+                ],
+                "comments": [
+                    {
+                        "tag": "abc",
+                        "comment": "very nice"
+                    }
+                ]
+            },
+            {
+                "src": "https://instagram.fnag1-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/50154916_2222963944658797_1055607136070067190_n.jpg?tp=1&_nc_ht=instagram.fnag1-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=I8HnYRpKG58AX_OXH8o&oh=b6722a0e2bc6d0ccac4cbec898f7ebe1&oe=606418AB",
+                "likes": [
+                    {
+                        "tag": "xyz",
+                        "img": ""
+                    }
+                ],
+                "comments": [
+                    {
+                        "tag": "xyz",
+                        "comment": "gret pic"
+                    }
+                ]
+            },
+            {
+                "src": "https://instagram.fnag1-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/65661415_369383230368016_8671730049902936726_n.jpg?tp=1&_nc_ht=instagram.fnag1-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=DL1piXahGVgAX-HAbRc&oh=8c599adedf4a3cbd965b7d0b10fd31e4&oe=6064F30A",
+                "likes": [
+                    {
+                        "tag": "xyz",
+                        "img": ""
+                    }
+                ],
+                "comments": [
+                    {
+                        "tag": "xyz",
+                        "comment": "gret pic"
+                    }
+                ]
+            }
+        ]
+    }
+}
