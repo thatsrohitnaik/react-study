@@ -7,9 +7,10 @@ import "./style.css";
 
 const SignUp = (props) => {
 
-    const { register, handleSubmit, errors, formState, getValues } = useForm({ defaultValues: { firstname: "rohitttt" } }); // initialize the hook
+    const { register, handleSubmit, errors, formState, getValues, reset } = useForm({ defaultValues: { firstname: "rohitttt" } }); // initialize the hook
     const onSubmit = (data) => {
         console.log("on submit", data);
+        reset({ firstname: "rohitttt" })
     };
     const [startDate, setStartDate] = useState(new Date());
 
@@ -18,6 +19,11 @@ const SignUp = (props) => {
         const values = getValues();
         console.log(values)
     }, [formState])
+
+
+    useEffect(() => {
+        console.log("formState", formState);
+    }, [reset])
 
     return (
         <div className="container">

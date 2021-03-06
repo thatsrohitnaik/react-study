@@ -9,22 +9,17 @@ import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 import SignUp from "./Pages/SignUp/";
 import NavBar from "./Components/Navbar/";
 import Datepicker from "./Pages/Calendar/";
+import ProtectedRoute from "./ProtectedRoute";
 
 const App = observer(() => {
   return (<>
     <BrowserRouter>
       <NavBar>
-        <NavLink className="normal" activeClassName="active" exact to="/profile">Home</NavLink>
+        <NavLink className="normal" activeClassName="active" exact to="/profile?auth=true&usr=rohit">Home</NavLink>
         <NavLink className="normal" activeClassName="active" exact to="/signup">Signup</NavLink>
-        <NavLink className="normal" activeClassName="active" exact to="/calendar">Calendar</NavLink>
       </NavBar>
       <Switch>
-        <Route path="/profile">
-          <Profile />
-        </Route>
-        <Route path="/calendar">
-          <Datepicker/>
-        </Route>
+      <ProtectedRoute path="/profile" component={Profile} />
         <Route path="/">
           <SignUp />
         </Route>
@@ -37,8 +32,8 @@ export default App;
 const store = {
   profileStore: new ProfileStore()
 };
-
-ReactDOM.hydrate(
+// hydrate
+ReactDOM.render(
   <StoreContext.Provider value={store}>
     <App />
   </StoreContext.Provider>,
