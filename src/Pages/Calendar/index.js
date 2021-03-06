@@ -1,18 +1,24 @@
-import React, { useState } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import React from "react";
+import { useForm } from "react-hook-form";
 
-const Calendar = () => {
-    const [startDate, setStartDate] = useState(new Date());
+export default function App () {
+  const {
+    register,
+    handleSubmit,
+    formState
+  } = useForm();
 
-    console.log(startDate, "startdats");
+  const onSubmit = (data) => console.log(data);
 
-    return (
-      <DatePicker
-      selected={startDate}
-      showYearDropdown
-      onChange={date => setStartDate(date)} />
-    );
-  };
+  React.useEffect(() => {
+    console.log("touched", formState.touched);
+  },[formState]); // use entire formState object as optional array arg in useEffect, not individual properties of it
 
-export default Calendar;
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input name="test" ref={register} />
+      <input type="submit" />
+    </form>
+  );
+};

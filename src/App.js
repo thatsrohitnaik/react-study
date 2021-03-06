@@ -38,7 +38,7 @@ const store = {
   profileStore: new ProfileStore()
 };
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <StoreContext.Provider value={store}>
     <App />
   </StoreContext.Provider>,

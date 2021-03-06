@@ -2,7 +2,6 @@ import React from "react";
 import { observer } from "mobx-react";
 import Post from "../../Post/"
 
-@observer
 class ProfilePostsSection extends React.Component {
   render() {
     const { posts = [] } = this.props;
