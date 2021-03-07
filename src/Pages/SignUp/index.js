@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useForm } from "react-hook-form";
 import DatePicker from "react-datepicker";
 import Error from "../../Components/Error/";
+import { AppContext } from "../../Context/AppContext";
 import "react-datepicker/dist/react-datepicker.css";
 import "./style.css";
 
@@ -9,28 +10,23 @@ const SignUp = (props) => {
 
     const { register, handleSubmit, errors, formState, getValues, reset } = useForm({ defaultValues: { firstname: "rohitttt" } }); // initialize the hook
     const onSubmit = (data) => {
-        console.log("on submit", data);
         reset({ firstname: "rohitttt" })
     };
     const [startDate, setStartDate] = useState(new Date());
 
     useEffect(() => {
-        console.log("formState", formState);
         const values = getValues();
-        console.log(values)
     }, [formState])
 
+    const t = useContext(AppContext);
 
     useEffect(() => {
-        console.log("formState", formState);
     }, [reset])
 
     return (
         <div className="container">
-
             <form onSubmit={handleSubmit(onSubmit)}>
-                <label htmlFor="title">Title</label>
-
+    <label htmlFor="title">{t("title")}</label>
                 <select
                     id="title"
                     name="title"
@@ -42,7 +38,7 @@ const SignUp = (props) => {
                 </select>
 
 
-                <label htmlFor="fname">First Name</label>
+    <label htmlFor="fname">{t("name")}</label>
 
                 <input
                     type="text"
@@ -54,7 +50,7 @@ const SignUp = (props) => {
                     isError={errors.fname}
                     error="First name is required."/>
 
-                <label htmlFor="lastname">Last Name</label>
+                <label htmlFor="lastname">{t("surname")}</label>
 
                 <input
                     id="lastname"
@@ -66,7 +62,7 @@ const SignUp = (props) => {
                     isError={errors.lastname}
                     error="Last name is required."/>
 
-                <label htmlFor="age">Age</label>
+                <label htmlFor="age">{t("age")}</label>
 
                 <input
                     type="text"
@@ -91,7 +87,7 @@ const SignUp = (props) => {
                     isError={errors.email}
                     error="Please enter valid email."/>
 
-                <label htmlFor="mobile">Mobile Number</label>
+                <label htmlFor="mobile">{t("mobileNo")}</label>
 
                 <input
                     type="tel"
@@ -105,7 +101,7 @@ const SignUp = (props) => {
                     error="We would need your number in case the code is on fire."/>
                 
                 <div>
-                <label>Hungry</label>
+                <label>{t("hungry")}</label>
                     <br />
                     <label htmlFor="hung1">Yes</label>
                     <input

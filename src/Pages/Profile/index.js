@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 import { toJS } from "mobx";
 import ProfileIntroSection from "../../Components/Profile/ProfileIntroSection/";
 import ProfilePostsSection from "../../Components/Profile/ProfilePostsSection";
-import { StoreContext } from "../../Context/context";
+import { StoreContext } from "../../Context/StoreContext";
 
 const Profile = observer((props) => {
 

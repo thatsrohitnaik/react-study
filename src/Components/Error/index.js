@@ -6,7 +6,6 @@ export default class Error extends React.Component {
     }
     render() {
         const { error, isError = false} = this.props;
-        console.log(this.props)
         return (<>
             {isError && <p>{error}</p>}
         </>

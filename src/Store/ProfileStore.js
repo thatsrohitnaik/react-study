@@ -1,15 +1,23 @@
 import { action, observable, toJS, computed } from "mobx";
 import { get } from "../Utility/rest";
+import Storage from "../Utility/localStorage";
+
+const storage = new Storage();
 
 class ProfileStore {
+  
+  constructor() {
+    const profile = storage.getFromLocalStorage("profile") || {};
+    profile && (this.profile = profile)
+  }
   @observable profile = {};
-  @observable loading = "false";
+  @observable loading = false;
 
-  @action getProfile = async() => {
+  @action getProfile = async () => {
     const response = await get("db.json");
     this.profile = response.data.profile;
-    this.loading = "true";
-    console.log(this.loading);
+    this.loading = true;
+    storage.setInLocalStorage("profile", this.profile)
   }
 }
 

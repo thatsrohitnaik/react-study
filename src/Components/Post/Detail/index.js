@@ -4,7 +4,6 @@ import "./style.css";
 const Post = (props) =>{
 
     const {src} = props.post;
-    console.log("ssss", props)
     return(
         <>
         <div className="flex">

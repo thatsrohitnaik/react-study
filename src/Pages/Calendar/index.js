@@ -11,7 +11,6 @@ export default function App () {
   const onSubmit = (data) => console.log(data);
 
   React.useEffect(() => {
-    console.log("touched", formState.touched);
   },[formState]); // use entire formState object as optional array arg in useEffect, not individual properties of it
 
 

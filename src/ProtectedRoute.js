@@ -8,7 +8,7 @@ const ProtectedRoute = (props) => {
 
     let location = (useLocation().search).replace("?","");
 
-    console.log(querystring.parse(location))
+//    console.log(querystring.parse(location))
 
     return isAuthenticated ? (
         <Component />
