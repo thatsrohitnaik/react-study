@@ -1,7 +1,8 @@
 import React from "react";
-import "./style.css";
 import Modal from "../Modal/";
 import DetailPost from "./Detail/";
+import Image from "../../Components/Image/";
+import "./style.css";
 
 class Post extends React.Component {
     constructor(props) {
@@ -19,7 +20,10 @@ class Post extends React.Component {
         const { src } = post;
         const { open } = this.state;
         return (<>
-            <img className="post-image" src={src} onClick={this.toggleDialog} />
+            <Image className="post-image"
+                 src={src}
+                 onClick={this.toggleDialog}
+                 loading="lazy"/>
             {
                 open && <Modal toggleDialog={this.toggleDialog}><DetailPost post={post} /></Modal>
             }

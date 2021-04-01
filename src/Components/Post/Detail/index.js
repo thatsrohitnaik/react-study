@@ -1,19 +1,23 @@
 import React from "react";
+import Image from "../../../Components/Image/";
 import "./style.css";
 
-const Post = (props) =>{
+const Post = (props) => {
 
-    const {src} = props.post;
-    return(
+    const { src } = props.post;
+
+    return (
         <>
-        <div className="flex">
-            <div className="div-img">
-               <img className="details-img" src={src}/>
+            <div className="flex">
+                <div className="div-img">
+                    <Image 
+                    className="details-img"
+                    src={src}/>
+                </div>
+                <div>
+                    detail
+                </div>
             </div>
-            <div>
-              detail
-            </div>
-        </div>
         </>
     )
 }

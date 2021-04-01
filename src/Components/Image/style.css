@@ -1,0 +1,21 @@
+.flex{
+    display: flex;
+}
+
+.div-img{
+    width: 70%;
+    height: 450px;
+}
+
+.details-img{
+    height: 450px;
+}
+
+.profile-img{
+    border: 1px solid black;
+    border-radius: 50%;
+    display: block;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+}

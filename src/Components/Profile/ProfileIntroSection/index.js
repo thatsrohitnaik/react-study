@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "../../../Components/Image/";
 import "./style.css";
 
 class ProfileIntroSection extends React.Component {
@@ -9,9 +10,10 @@ class ProfileIntroSection extends React.Component {
       <>
         <div className="profile-div-info">
           <div className="profile-picture">
-            <img
+            <Image
               className="profile-img"
-              src={img} />
+              src={img}
+              fallbackSrc='asset/images/avatar.png'/>
           </div>
           <div className="profile-information">
             <div className="profile-username">
