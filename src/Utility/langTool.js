@@ -15,13 +15,6 @@ export default class Language {
         }    
     }
 
-    translation = (field) => {
-        try {
-            return this.lang[field];
-        }
-        catch (e) {
-            return field
-        }
-    }
+    translation = (field) =>  this.lang[field] || field;
 
 }

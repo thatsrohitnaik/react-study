@@ -5,5 +5,7 @@
     "hungry":"hungrig",
     "name": "Name",
     "surname": "Nachname",
-    "mobileNo":"Handy Nummer"    
+    "mobileNo":"Handy Nummer",
+    "tags":"Etikett",
+    "saved": "sparen"
 }

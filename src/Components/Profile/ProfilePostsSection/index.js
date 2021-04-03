@@ -1,18 +1,20 @@
 import React from "react";
 import { observer } from "mobx-react";
-import Post from "../../Post/"
+import { AppContext } from "../../../Context/AppContext";
+import Post from "../../Post/";
 
 class ProfilePostsSection extends React.Component {
   render() {
     const { posts = [] } = this.props;
+
     return (
-      <>
-        <div className="profile-div-post">
+      <AppContext.Consumer>
+        { (t) => <div className="profile-div-post">
           <div className="selection">
             <div>
-              <div> posts </div>
-              <div> tags </div>
-              <div> saved </div>
+              <div> {t("posts")} </div>
+              <div> {t("tags")} </div>
+              <div> {t("saved")} </div>
             </div>
           </div>
           <div className="image-grid">
@@ -24,8 +26,8 @@ class ProfilePostsSection extends React.Component {
           </div>
           <div className="profile-posts-save">
           </div>
-        </div>
-      </>
+        </div>}
+      </AppContext.Consumer>
     );
   }
 }

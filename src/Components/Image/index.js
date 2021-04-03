@@ -5,7 +5,7 @@ const Image = (props) => {
 
     const [src, setSrc] = useState(props.src);
     const [error, setError] = useState(false);
-    const {fallbackSrc = 'asset/images/placeholder.jpg', className = ''} = props;
+    const {fallbackSrc = 'asset/images/placeholder.jpg', className = '', loading = 'eager'} = props;
 
     const onError = () =>{
         if(!error){
@@ -17,7 +17,7 @@ const Image = (props) => {
     return (
         <img className={className}
                     src={src}
-                    loading="lazy"
+                    loading={loading}
                     onClick={props.onClick}
                     onError= {onError}/>
     );

@@ -13,7 +13,7 @@ import { AppContext } from "./Context/AppContext";
 import Storage from "./Utility/localStorage";
 import Language from "./Utility/langTool";
 import LanguageSelector from "./Components/LanguageSelector/";
-
+import Topics from "./Pages/Topics/";
 
 const store = {
   profileStore: new ProfileStore()
@@ -35,12 +35,16 @@ const App = observer(() => {
           <NavBar>
             <NavLink className="normal" activeClassName="active" exact to="/profile?auth=true&usr=rohit">Home</NavLink>
             <NavLink className="normal" activeClassName="active" exact to="/signup">Signup</NavLink>
+            <NavLink className="normal" activeClassName="active" exact to="/topics">Topics</NavLink>
           </NavBar>
           <LanguageSelector lang={lang} onLanguageChange={onLanguageChange} />
           <Switch>
             <ProtectedRoute path="/profile" component={Profile} />
-            <Route path="/">
+            <Route path="/signup">
               <SignUp />
+            </Route>
+            <Route path="/topics">
+              <Topics />
             </Route>
           </Switch>
         </BrowserRouter>
