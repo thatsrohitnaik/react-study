@@ -33,9 +33,9 @@ const App = observer(() => {
       <StoreContext.Provider value={store}>
         <BrowserRouter>
           <NavBar>
-            <NavLink className="normal" activeClassName="active" exact to="/profile?auth=true&usr=rohit">Home</NavLink>
-            <NavLink className="normal" activeClassName="active" exact to="/signup">Signup</NavLink>
-            <NavLink className="normal" activeClassName="active" exact to="/topics">Topics</NavLink>
+            <NavLink className="normal" activeClassName="active" exact to="/profile?auth=true&usr=rohit">{translation('home')}</NavLink>
+  <NavLink className="normal" activeClassName="active" exact to="/signup">{translation('signup')}</NavLink>
+            <NavLink className="normal" activeClassName="active" exact to="/topics">{translation('topics')}</NavLink>
           </NavBar>
           <LanguageSelector lang={lang} onLanguageChange={onLanguageChange} />
           <Switch>

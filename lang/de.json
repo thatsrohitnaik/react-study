@@ -7,5 +7,7 @@
     "surname": "Nachname",
     "mobileNo":"Handy Nummer",
     "tags":"Etikett",
-    "saved": "sparen"
+    "saved": "sparen",
+    "signup": "Anmeldung",
+    "topics": "Themen"
 }

@@ -5,5 +5,7 @@
     "hungry":"Hungry",
     "name": "Name",
     "surname": "Surname",
-    "mobileNo":"Mobile Number"        
+    "mobileNo":"Mobile Number",
+    "signup": "Signup",
+    "topics": "Topics"        
 } 
